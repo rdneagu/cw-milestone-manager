@@ -1,0 +1,23 @@
+$background: url('./assets/bg-3.jpg'); // Photo by Roland Epple on Unsplash
+
+$default: darken(#00aaff, 20%);
+$teal: #00dfa6;
+$teal-border: #00936d;
+$teal-bg: darken($teal, 20%);
+$cyan: #00aaff;
+$cyan-l10: lighten($cyan, 10%);
+$cyan-l20: lighten($cyan, 20%);
+$cyan-d10: darken($cyan, 10%);
+$cyan-d20: darken($cyan, 20%);
+$cyan-d40: darken($cyan, 40%);
+$redish: #ff6347;
+
+$color-cyan: #00aaff;
+$color-cyan-border: darken($color-cyan, 10%);
+$color-cyan-bg: darken($color-cyan, 40%);
+$color-cyan-d: #04142e;
+$color-cyan-d2: #001625;
+$color-error: #ff0000;
+$color-error-soft: #ff6347;
+$color-mustard: #ffdb58;
+

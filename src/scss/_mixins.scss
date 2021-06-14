@@ -1,0 +1,38 @@
+@mixin transition($properties, $duration: 0.4s, $easing: ease, $delay: 0) {
+  transition-property: unquote($properties);
+  transition-duration: $duration;
+  transition-timing-function: $easing;
+  transition-delay: $delay;
+}
+
+@mixin disableSelect() {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
+@mixin placeholder($color) {
+  color: $color;
+	font-size: 14px;
+	font-weight: 600;
+	opacity: .5;
+}
+
+@mixin setPlaceholder($color: $color-cyan) {
+	&::-webkit-input-placeholder {
+		@include placeholder($color);
+	}
+	&::-moz-placeholder {
+	  @include placeholder($color);
+	}
+	&:-ms-input-placeholder {
+	  @include placeholder($color);
+	}
+	&:-moz-placeholder {
+	  @include placeholder($color);
+	}
+	&:placeholder-shown {
+		text-shadow: none !important;
+	}
+}
